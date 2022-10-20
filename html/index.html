@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+  <title>Calculadora de rendimento</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1 class="header-tittle">Rendimentos.</h1>
+  </header>
+
+  <div class="calc-box">
+
+    <h3 class="second-tittle">Rendimentos</h3>
+
+    <form class="calc-form">
+      <input type="text" class="input" id="nome" placeholder="Nome da cota (opcional)">
+      <input type="Number" class="input" id="preco_cota" placeholder="Preço da cota" required>
+      <input type="Number" class="input" id="cotas_mes" placeholder="Cotas por mês" required>
+      <input type="Number" class="input" id="rendimento_cota" placeholder="Rendimento da cota" required>
+      <input type="Number" class="input" id="anos" placeholder="Anos investindo">
+
+    </form>
+
+    <input type="submit" value="Calcular" class="input" id="btn-submit" onclick="calcular()">
+    <div class="result-box">
+      <p class="result-text"></p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
